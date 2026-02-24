@@ -1,6 +1,12 @@
-def main():
-    print("Hello from custom-tokeniser!")
+import tiktoken
 
+enc = tiktoken.encoding_for_model("gpt-4o")
 
-if __name__ == "__main__":
-    main()
+text = "Hey there! My name is Piyush Garg"
+tokens = enc.encode(text)
+
+print("Tokens", tokens)
+
+decoded = enc.decode(tokens)
+
+print()
