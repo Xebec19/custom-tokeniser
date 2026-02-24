@@ -9,4 +9,4 @@ print("Tokens", tokens)
 
 decoded = enc.decode(tokens)
 
-print()
+print(decoded)
